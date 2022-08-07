@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: poppinsRegular;
+    src: url('/assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: poppinsBold;
+    src: url('/assets/fonts/Poppins-Bold.ttf');
+}
+
+.main-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: url('./assets/images/background-mob.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+}
+
+.wrapper-right{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 85%;
+    height: 100vh;
+    position: relative;
+}
+
+.logo{
+    width: 30%;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.title{
+    color: #333333;
+    font-family: poppinsBold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.text{
+    color: #333333;
+    font-family: poppinsRegular;
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.img-frame{
+    width: 90%;
+    padding: 7px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.intro-img{
+    width: 100%;
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-family: poppinsRegular;
+    background-color: #008e99;
+    border: none;
+    outline: none;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+}
+
+.copy{
+    color: #333333;
+    font-family: poppinsRegular;
+    font-size: 13px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.bold{
+    font-family: poppinsBold;
+}
+
+.line1{
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    background-color: #008f9995;
+    width: 20px;
+    height: 700px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.line2{
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    background-color: #008f99;
+    width: 20px;
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+}
+
+.line3{
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    background-color: #008f9998;
+    width: 20px;
+    height: 60vh;
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+}
+
+.time{
+    font-family: poppinsBold;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cards-wrapper{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.card{
+    width: 100px;
+    height: 100px;
+}
+
+.card-wrap{
+    padding: 5px;
+    background-color: #008e99;
+    margin-top: 30px;
+}
+
+.card1{
+    background: url('./assets/images/pic1.jpg');
+    background-size: cover;
+}
+.card2{
+    background: url('./assets/images/pic2.jpg');
+    background-size: cover;
+}
+.card3{
+    background: url('./assets/images/pic3.jpg');
+    background-size: cover;
+}
+.card4{
+    background: url('./assets/images/pic4.jpg');
+    background-size: cover;
+}
+
+.link{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+.title-reg{
+    margin-top: 30px;
+}
+
+.form{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+input{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #008e99;
+    margin: auto;
+    height: 30px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+input[type='checkbox']{
+    width: 13px;
+    height: 13px;
+    background-color: #008e99;
+}
+
+label{
+    font-family: 'poppinsRegular';
+    font-size: 13px;
+}
+
+.icons-wrapper{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.icons-wrapper img{
+    width: 10%;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+    .wrapper-right{
+        width: 60%;
+    }   
+    
+    .main-wrapper{
+        background: url('./assets/images/background-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .logo{
+        width: 15%;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+
+    .text{
+        font-size: 16px;
+        width: 500px;
+        margin-top: 40px;
+    }
+
+    .img-frame{
+        width: fit-content;
+        margin-top: 40px;
+    }
+
+    .intro-img{
+        width: 400px;
+    }
+
+    .copy{
+        font-size: 15px;
+    }
+
+    .line1{
+        width: 30px;
+        display: block;
+    }
+    
+    .line2{
+        width: 30px;
+    }
+    
+    .line3{
+        width: 30px;
+    }
+
+    .card{
+        width: 150px;
+        height: 150px;
+    }
+
+    .cards-wrapper{
+        width: 700px;
+    }
+
+    .time{
+        margin-top: 200px;
+    }
+
+    .form{
+        width: 600px;
+    }
+
+    .form-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    input{
+        width: 30%;
+    }
+
+    input[type='checkbox']{
+        margin-left: 10px;
+    }
+}
